@@ -50,28 +50,6 @@
 
 <office:styles>
 
-    <!--style:default-style style:family="graphic">
-        <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" style:flow-with-text="false"/>
-        <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
-            <style:tab-stops/>
-        </style:paragraph-properties>
-        <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
-    </style:default-style-->
-
-    <!--style:default-style style:family="paragraph">
-        <style:paragraph-properties fo:orphans="2" fo:widows="2" fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="0.4925in" style:writing-mode="page"/>
-        <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="en" fo:country="US" style:letter-kerning="true" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
-    </style:default-style-->
-
-    <!--style:default-style style:family="table">
-        <style:table-properties table:border-model="collapsing"/>
-    </style:default-style>
-
-    <style:default-style style:family="table-row">
-        <style:table-row-properties fo:keep-together="auto"/>
-    </style:default-style-->
-
-
     <style:style style:name="DEFAULT"
         style:display-name="Resume - Default"
         style:family="paragraph"
@@ -327,9 +305,6 @@
             style:font-charset="x-symbol"
             />
     </style:style>
-
-
-    <!--style:style style:name="Standard" style:family="paragraph" style:class="text"/-->
 
 </office:styles>
 

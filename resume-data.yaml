@@ -14,7 +14,7 @@ sections:
     - name: Skilled
       skills:
         - Ansible
-        - RHEL (6 & 7)
+        - RHEL (6 &amp; 7)
         - Apache
         - OpenSSH
         - NFS
@@ -24,8 +24,11 @@ sections:
       skills:
         - Ubuntu
         - MySQL
+        - Iptables
         - RHCS
+        - DNS
         - Wordpress
+        - VMWare
   - name: Languages, Modules, Tools
     subsubsections:
     - name: Skilled
@@ -36,8 +39,8 @@ sections:
         - Awk
     - name: Proficient
       skills:
-        - Flask
         - SQL
+        - Flask
         - Git(hub)
         - Pexpect
 
@@ -52,34 +55,31 @@ sections:
     alt: Linux Administrator II
     dates: Nov 2012 - June 2018
     bulletpoints:
-    - Author, improve, and maintain tools and automation used by support staff. This includes applications and scripts which interact with internal APIs, log into and perform work on customer servers, query and manipulate databases, web scrape, and parse server logs, command output and network appliance configurations
-    - Troubleshoot, configure, and deploy RHEL and Ubuntu servers, along with common services - Apache, Nginx, NFS, Vsftpd, PHP-FPM, etc.
-    - Implement secure and sustainable solutions in response to customer requests, often following up on incomplete information to resolve XY problems
+    - Authored, improved, and maintained tools and automation used by support staff. This includes applications and scripts which interact with internal APIs, log into and perform work on customer servers, query and manipulate databases, web scrape, and parse server logs, command output and network appliance configurations
+    - Configured, deployed, and maintained RHEL and Ubuntu servers, along with common services - Apache, Nginx, NFS, Vsftpd, PHP-FPM, etc.
+    - Implemented secure and sustainable solutions in response to customer requests, often following up on incomplete information to resolve XY problems
     - Demonstrated among the best of my peers in following issues through to their resolution
-    - Manage an often chaotic workload, often in environments I have not previously worked on, to deliver quality results in a timely manner
-    - Screen and interview candidates applying for positions on my team
+    - Managed an often chaotic workload, often in environments I had not previously worked on, to deliver quality results in a timely manner
+    - Screened and interviewed candidates applying for positions on my team
 
   - name: Texas A&amp;M CIS
     alt: Student Leader / Student Technician
     dates: Jul 2008 - May 2012
     bulletpoints:
-    - Supported desktop PCs (personal and lab) an associated large network printers
-    - Served in a student management position, wrote documentation for our systems and processes, and participated in lab decisions ensuring smooth operation
+    - Managed campus computer lab operations, desktop PCs, and large networked printers
+    - Authored and maintained documentation on lab systems and processes
+    - Served in a student management position and participated in staffing decisions
+    - Worked for the campus Help Desk, assisting students and faculty with personal machines and university accounts
 
   - name: Personal Projects
+    alt: https://github.com/dechandler
     dates: Ongoing
     bulletpoints:
-    - Write and maintain Ansible playbooks for a network of personal infrastructure, including two servers (CentOS 7, DietPi), a laptop (Ubuntu), and a router (Alpine)
-    
-    - a network of personal infrastructure including two servers, a two laptops, 
+    - Automated configuration of personal infrastructure - thusfar using Ansible for managing my laptop (Ubuntu) and scripts for redeploying my router (Alpine)
+    - Automatic generation of this document
 
 - name: Education
   subsections:
   - name: Texas A&amp;M University
     alt: B.S. in Psychology
     dates: Graduated May 2012
-
-- name: See Also
-  subsections:
-  - name: Github
-    alt: https://github.com/dechandler

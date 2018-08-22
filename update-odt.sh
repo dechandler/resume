@@ -1,4 +1,5 @@
 #!/bin/bash
 
 ./template.py
-zip -u resume.odt styles.xml content.xml
+zip -u resume.odt *.xml
+soffice --headless --convert-to pdf resume.odt

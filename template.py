@@ -5,10 +5,11 @@ import os
 from jinja2 import Template
 import yaml
 
-base_dir = os.path.expanduser("~/var/docs/resume/")
-data_file = os.path.join(base_dir, "resume-data.yaml")
-template_file = os.path.join(base_dir, "content.xml.j2")
-content_file = os.path.join(base_dir, "content.xml")
+pwd = os.environ['PWD']
+
+data_file = os.path.join(pwd, "resume-data.yaml")
+template_file = os.path.join(pwd, "content.xml.j2")
+content_file = os.path.join(pwd, "content.xml")
 
 with open(data_file) as fh:
     resume_data = yaml.load(fh)
