@@ -29,6 +29,7 @@ sections:
         - DNS
         - Wordpress
         - VMWare
+        - LAMP Stack
   - name: Languages, Modules, Tools
     subsubsections:
     - name: Skilled
@@ -48,6 +49,8 @@ sections:
   subsections:
   - name: RHCSA (Red Hat Certified System Administrator)
     dates: "RHEL 6 (expired): Feb 2013, RHEL 7: Oct 2016"
+  - name: Red Hat Certified Specialist in Ansible Automation
+    dates: Sep 2018
 
 - name: Experience
   subsections:
@@ -56,7 +59,7 @@ sections:
     dates: Nov 2012 - June 2018
     bulletpoints:
     - Authored, improved, and maintained tools and automation used by support staff. This includes applications and scripts which interact with internal APIs, log into and perform work on customer servers, query and manipulate databases, web scrape, and parse server logs, command output and network appliance configurations
-    - Configured, deployed, and maintained RHEL and Ubuntu servers, along with common services - Apache, Nginx, NFS, Vsftpd, PHP-FPM, etc.
+    - Configured, deployed, and maintained RHEL and Ubuntu servers, along with common services — e.g., Apache, Nginx, NFS, Vsftpd, and PHP-FPM
     - Implemented secure and sustainable solutions in response to customer requests, often following up on incomplete information to resolve XY problems
     - Demonstrated among the best of my peers in following issues through to their resolution
     - Managed an often chaotic workload, often in environments I had not previously worked on, to deliver quality results in a timely manner
@@ -75,7 +78,7 @@ sections:
     alt: https://github.com/dechandler
     dates: Ongoing
     bulletpoints:
-    - Automated configuration of personal infrastructure - thusfar using Ansible for managing my laptop (Ubuntu) and scripts for redeploying my router (Alpine)
+    - Automated configuration of personal infrastructure, thusfar using Ansible for managing a laptop (Ubuntu) and scripts for redeploying an x86 router (Alpine)
     - Automatic generation of this document
 
 - name: Education
