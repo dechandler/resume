@@ -16,20 +16,27 @@ sections:
         - Ansible
         - RHEL (6 &amp; 7)
         - Apache
+        - Nginx
         - OpenSSH
         - NFS
+        - HTTP/HTTPS
         - Linux Networking
-        - Nginx
+        - UNIX Permissions &amp; FACLs
     - name: Proficient
       skills:
         - Ubuntu
         - MySQL
         - Iptables
+        - Systemd &amp; SysV
+        - iDRAC
         - RHCS
         - DNS
+        - Rackspace Cloud
+        - Nimbus Monitoring
         - Wordpress
         - VMWare
         - LAMP Stack
+        - TCP/IP
   - name: Languages, Modules, Tools
     subsubsections:
     - name: Skilled
@@ -44,6 +51,7 @@ sections:
         - Flask
         - Git(hub)
         - Pexpect
+        - Web APIs
 
 - name: Certification
   subsections:
@@ -51,35 +59,43 @@ sections:
     dates: "RHEL 6 (expired): Feb 2013, RHEL 7: Oct 2016"
   - name: Red Hat Certified Specialist in Ansible Automation
     dates: Sep 2018
+  - name: AWS Cloud Practitioner
+    dates: Feb 2019
 
 - name: Experience
   subsections:
   - name: Rackspace
-    alt: Linux Administrator II
+    alt: Linux Administrator
     dates: Nov 2012 - June 2018
     bulletpoints:
+    - Configured, deployed, and maintained RHEL and Ubuntu servers, along with common services — e.g., Apache, MySQL, NFS, Vsftpd, and PHP-FPM
+    - Implemented secure and sustainable solutions in response to customer requests, often overcoming language and cultural barriers and following up on incomplete information
+    - Led a development task force, where we addressed technical debt in the tools used by front-line support staff and created a handful of new tools that were sorely needed
     - Authored, improved, and maintained tools and automation used by support staff. This includes applications and scripts which interact with internal APIs, log into and perform work on customer servers, query and manipulate databases, web scrape, and parse server logs, command output and network appliance configurations
-    - Configured, deployed, and maintained RHEL and Ubuntu servers, along with common services — e.g., Apache, Nginx, NFS, Vsftpd, and PHP-FPM
-    - Implemented secure and sustainable solutions in response to customer requests, often following up on incomplete information to resolve XY problems
-    - Demonstrated among the best of my peers in following issues through to their resolution
-    - Managed an often chaotic workload, often in environments I had not previously worked on, to deliver quality results in a timely manner
-    - Screened and interviewed candidates applying for positions on my team
+    - Screened and interviewed candidates applying for positions on my team and contributed to the training of new hires
 
-  - name: Texas A&amp;M CIS
-    alt: Student Leader / Student Technician
-    dates: Jul 2008 - May 2012
+  - name: Texas A&amp;M Help Desk
+    alt: Student Technician
+    dates: Jul 2011 - May 2012
+    bulletpoints:
+    - Assisted students and faculty with personal machines. Work included cleaning malware infections, assessing and fixing boot problems, recovering data, swapping hardware, and OS reinstalls
+    - Managed university student accounts and communicated the importance of password security and secrecy
+
+  - name: Texas A&amp;M Student Computing Center
+    alt: Student Leader
+    dates: Jul 2008 - Jul 2011
     bulletpoints:
     - Managed campus computer lab operations, desktop PCs, and large networked printers
-    - Authored and maintained documentation on lab systems and processes
+    - Authored and updated documentation on lab systems and processes
     - Served in a student management position and participated in staffing decisions
-    - Worked for the campus Help Desk, assisting students and faculty with personal machines and university accounts
 
   - name: Personal Projects
     alt: https://github.com/dechandler
     dates: Ongoing
     bulletpoints:
-    - Automated configuration of personal infrastructure, thusfar using Ansible for managing a laptop (Ubuntu) and scripts for redeploying an x86 router (Alpine)
+    - Automated configuration of personal infrastructure, thus far using Ansible for managing desktop machines (Fedora) and Raspberry Pis (Raspbian), and scripts for redeploying an x86 router (Alpine)
     - Automatic generation of this document
+    #- Tinkering with Docker containers
 
 - name: Education
   subsections:

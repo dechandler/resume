@@ -55,6 +55,27 @@
         </style:section-properties>
     </style:style>
 
+    <style:style style:name="SKILLS_SECTION" style:family="section">
+        <style:section-properties
+            text:dont-balance-text-columns="true"
+            style:editable="false"
+            >
+            <style:columns fo:column-count="2">
+                <style:column style:rel-width="2109*" fo:start-indent="0in" fo:end-indent="0.215in"/>
+                <style:column style:rel-width="8690*" fo:start-indent="0.215in" fo:end-indent="0in"/>
+            </style:columns>
+        </style:section-properties>
+    </style:style>
+
+    <style:style style:name="SKILLS_CATEGORY" style:family="paragraph" style:parent-style-name="SUBSECTION">
+        <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>    
+    </style:style>
+
+    <style:style style:name="SKILLS_LIST" style:family="paragraph" style:parent-style-name="SUBSECTION">
+        <style:paragraph-properties fo:line-height="115%" fo:break-before="column"/>
+    </style:style>
+
+
     <style:style style:name="CONTACT_TABLE" style:family="table">
         <style:table-properties
             style:width="3in"
@@ -149,12 +170,13 @@
 
         {% if 'subsubsections' in subsection.keys() %}
             {% for sss in subsection.subsubsections %}
-                <text:p text:style-name="SUBSECTION">
-                    <text:tab/>
-                    <text:span text:style-name="SUBSECTION_NAME">{{ sss.name }}</text:span>
-                    <text:tab/>
-                    {{ sss.skills | join(', ')  }}
-                </text:p>
+                <text:section text:style-name="SKILLS_SECTION" text:name="{{ section.name }}-{{ sss.name }}">
+                    <text:p text:style-name="SKILLS_CATEGORY">
+                        <text:span fo:font-size="17pt"><text:s/></text:span>
+                        <text:span text:style-name="SUBSECTION_NAME">{{ sss.name }}</text:span>
+                    </text:p>
+                    <text:p text:style-name="SKILLS_LIST">{{ sss.skills | join(', ')  }}</text:p>
+                </text:section>
             {% endfor %}
         {% endif %}
 
