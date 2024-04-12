@@ -212,7 +212,6 @@
             fo:margin-top="0.05in"
             fo:margin-bottom="0.1in"
             loext:contextual-spacing="false"
-            fo:text-align="justify"
             />
     </style:style>
 
