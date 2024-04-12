@@ -1,39 +1,55 @@
 header:
   name: David Chandler
-  tagline: Linux Administrator seeking opportunities<text:line-break/>in systems automation and development
   contact:
-    Email: contact@dechandler.io
-
+  - venue: Email
+    address: contact@dechandler.io
+  - venue: Github
+    address: https://github.com/dechandler
+  - venue: Linkedin
+    address: https://linkedin.com/in/dechandler10
+  tagline: 
 
 sections:
+
+- text:
+    - Automation Engineer seeking opportunities in server lab management, Linux systems engineering, or further automation engineering
+    - Prefer public sector, but open depending on the company
+    - Searching for hybrid work in the Tacoma/Olympia/Seattle, WA area
+    - >
+      Note: my title at Commscope was properly Staff QA Engineer, but that
+      describes my work poorly and causes confusion. not sure if
+      changing this is permissible
+    - >
+      I generate this document via a template that creates an ODT file and converts that to a PDF, so I'm not sure how exported as a DOCX will look in MS Office. In case the DOCX formatting makes no sense, the PDF can be found here: https://github.com/dechandler/resume/blob/master/resume.pdf
 
 - name: Technology
   subsections:
   - name: Administration
-    subsubsections:
+    subsections:
+    - name: Skilled
+      skills:
+        - RHEL
+        - Apache
+        - Nginx
+        - OpenSSH
+        - Linux Networking
+        - Iptables
+        - UNIX Permissions
+        - Syncthing
+    - name: Proficient
+      skills:
+        - Kubernetes
+        - Ubuntu
+        - ElasticSearch
+        - RabbitMQ
+        - Nftables
+        - TCP/IP
+  - name: Languages, Modules, Tools
+    subsections:
     - name: Skilled
       skills:
         - Ansible
-        - RHEL (6 &amp; 7)
-        - Apache
-        - OpenSSH
-        - NFS
-        - Linux Networking
-        - Nginx
-    - name: Proficient
-      skills:
-        - Ubuntu
-        - MySQL
-        - Iptables
-        - RHCS
-        - DNS
-        - Wordpress
-        - VMWare
-        - LAMP Stack
-  - name: Languages, Modules, Tools
-    subsubsections:
-    - name: Skilled
-      skills:
+        - Terraform
         - Python
         - Bash/Shell
         - Regular Expressions
@@ -43,43 +59,69 @@ sections:
         - SQL
         - Flask
         - Git(hub)
-        - Pexpect
+        - Jenkins
 
-- name: Certification
-  subsections:
-  - name: RHCSA (Red Hat Certified System Administrator)
-    dates: "RHEL 6 (expired): Feb 2013, RHEL 7: Oct 2016"
-  - name: Red Hat Certified Specialist in Ansible Automation
-    dates: Sep 2018
+
 
 - name: Experience
   subsections:
+  - name: Commscope
+    alt: Staff Automation Engineer for Performance QA
+    dates: Apr 2019 - Feb 2024
+    bulletpoints:
+    - Automated deployment of highly variable load test environments under a constantly evolving set of requirements, starting in a Linux server lab, moving to AWS EC2 instances, and ending up on EKS (Elastic Kubernetes Service) with other AWS hosted services. This brought test deployment from two weeks when I started to a matter of hours. The bulk of this was done with Ansible, Terraform, Python and Bash
+    - Took ownership of server lab maintenance, which included documentation of resources, repairing deployment functionality, and working with IT to clean up a compromise, which earned me recognition that came with a bonus
+    - Collaborated with developers to optimize environment parameters and supporting service configurations to accommodate various deployments of software products
+    - Load tested software products using a variety of client simulators and data generators to provide performance reports and cost summaries
+
   - name: Rackspace
-    alt: Linux Administrator II
+    alt: Linux Administrator
     dates: Nov 2012 - June 2018
     bulletpoints:
+    - Configured, deployed, and maintained RHEL and Ubuntu servers, along with common services — e.g., Apache, MySQL, NFS, Vsftpd, and PHP-FPM
+    - Implemented secure and sustainable solutions in response to customer requests, often overcoming language and cultural barriers and following up on incomplete information
+    - Led a development task force, where we addressed technical debt in the tools used by front-line support staff and created a handful of new tools that were sorely needed
     - Authored, improved, and maintained tools and automation used by support staff. This includes applications and scripts which interact with internal APIs, log into and perform work on customer servers, query and manipulate databases, web scrape, and parse server logs, command output and network appliance configurations
-    - Configured, deployed, and maintained RHEL and Ubuntu servers, along with common services — e.g., Apache, Nginx, NFS, Vsftpd, and PHP-FPM
-    - Implemented secure and sustainable solutions in response to customer requests, often following up on incomplete information to resolve XY problems
-    - Demonstrated among the best of my peers in following issues through to their resolution
-    - Managed an often chaotic workload, often in environments I had not previously worked on, to deliver quality results in a timely manner
-    - Screened and interviewed candidates applying for positions on my team
+    - Screened and interviewed candidates applying for positions on my team and contributed to the training of new hires
 
-  - name: Texas A&amp;M CIS
-    alt: Student Leader / Student Technician
-    dates: Jul 2008 - May 2012
+
+
+  - name: Help Desk
+    parent: Texas A&amp;M Computing &amp; Information Services
+    alt: Student Technician
+    dates: Jul 2011 - May 2012
+    bulletpoints:
+    - Assisted students and faculty with personal machines. Work included cleaning malware infections, assessing and fixing boot problems, recovering data, swapping hardware, and OS reinstalls
+    - Managed university student accounts and communicated the importance of password security and secrecy
+
+  - name: Student Computing Center
+    parent: Texas A&amp;M Computing &amp; Information Services
+    alt: Student Leader
+    dates: Jul 2008 - Jul 2011
     bulletpoints:
     - Managed campus computer lab operations, desktop PCs, and large networked printers
-    - Authored and maintained documentation on lab systems and processes
+    - Authored and updated documentation on lab systems and processes
     - Served in a student management position and participated in staffing decisions
-    - Worked for the campus Help Desk, assisting students and faculty with personal machines and university accounts
 
-  - name: Personal Projects
+  - name: Home Projects
     alt: https://github.com/dechandler
-    dates: Ongoing
+    #dates: Ongoing
     bulletpoints:
-    - Automated configuration of personal infrastructure, thusfar using Ansible for managing a laptop (Ubuntu) and scripts for redeploying an x86 router (Alpine)
-    - Automatic generation of this document
+    - Automated configuration of personal infrastructure, using Ansible for managing desktop and server machines, as well as a home router and cloud servers (Fedora, Debian, CentOS)
+    - Built a home automation system around Home Assistant, which includes off-the-shelf devices and bespoke ESP-based sensors, switches and relays
+    #- Automatic generation of this document
+    #- Tinkering with Docker containers
+
+- name: Certification
+  subsections:
+  - name: CKA (Certified Kubernetes Administrator)
+    dates: IN PROGRESS
+  - name: RHCSA (Red Hat Certified System Administrator)
+    dates: Oct 2016 (Expired)
+  - name: Red Hat Certified Specialist in Ansible Automation
+    dates: Sep 2018 (Expired)
+  - name: AWS Cloud Practitioner
+    dates: Feb 2019 (Expired)
 
 - name: Education
   subsections:

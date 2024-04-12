@@ -43,46 +43,6 @@
 
 <office:automatic-styles>
 
-    <style:style style:name="HEADER_SECTION" style:family="section">
-        <style:section-properties
-            text:dont-balance-text-columns="true"
-            style:editable="false"
-            >
-            <style:columns fo:column-count="2">
-                <style:column style:rel-width="6480*" fo:start-indent="0in" fo:end-indent="0in"/>
-                <style:column style:rel-width="4320*" fo:start-indent="0in" fo:end-indent="0in"/>
-            </style:columns>
-        </style:section-properties>
-    </style:style>
-
-    <style:style style:name="CONTACT_TABLE" style:family="table">
-        <style:table-properties
-            style:width="3in"
-            table:align="margins"
-            style:shadow="none"
-            fo:break-before="column"
-            />
-    </style:style>
-    <style:style style:name="CONTACT_TABLE_COL1" style:family="table-column">
-        <style:table-column-properties
-            style:column-width="0.6875in"
-            style:rel-column-width="990*"
-            />
-    </style:style>
-    <style:style style:name="CONTACT_TABLE_COL2" style:family="table-column">
-        <style:table-column-properties
-            style:column-width="2.3125in"
-            style:rel-column-width="3330*"
-            />
-    </style:style>
-    <style:style style:name="CONTACT_TABLE_CELL" style:family="table-cell">
-        <style:table-cell-properties
-            style:vertical-align="bottom"
-            fo:padding="0.0382in"
-            fo:border="none"
-            />
-    </style:style>
-
 
     <text:list-style style:name="L2">
         <text:list-level-style-bullet text:level="1" text:bullet-char="•">
@@ -103,74 +63,124 @@
 
 <!--style:table-cell-properties style:vertical-align="bottom" fo:padding="0.0382in" fo:border="none"/-->
 
-<text:sequence-decls><text:sequence-decl text:display-outline-level="0" text:name="Illustration"/><text:sequence-decl text:display-outline-level="0" text:name="Table"/><text:sequence-decl text:display-outline-level="0" text:name="Text"/><text:sequence-decl text:display-outline-level="0" text:name="Drawing"/></text:sequence-decls>
+<text:sequence-decls>
+    <text:sequence-decl text:display-outline-level="0" text:name="Illustration"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Table"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
+    <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
+</text:sequence-decls>
 
-<text:section text:style-name="HEADER_SECTION" text:name="Header">
-    <text:p text:style-name="HEADER_NAME">{{ header.name }}</text:p>
-    <text:p text:style-name="HEADER_TAGLINE">{{ header.tagline }}</text:p>
-    <table:table table:name="Contact Table" table:style-name="CONTACT_TABLE">
-        <table:table-column table:style-name="CONTACT_TABLE_COL1"/>
-        <table:table-column table:style-name="CONTACT_TABLE_COL2"/>
-        <table:table-row></table:table-row>
-        {% for detail in header.contact.items() %}
-            <table:table-row>
-                <table:table-cell table:style-name="CONTACT_TABLE_CELL" office:value-type="string">
-                    <text:p text:style-name="HEADER_CONTACT_TYPE">{{ detail[0] }}</text:p>
-                </table:table-cell>
-                <table:table-cell table:style-name="CONTACT_TABLE_CELL" office:value-type="string">
-                    <text:p text:style-name="HEADER_CONTACT_VAULE">{{ detail[1] }}</text:p>
-                </table:table-cell>
-            </table:table-row>
-        {% endfor %}
-    </table:table>
+<text:section text:style-name="HEADER" text:name="Header Section">
+
+    {% for detail in header.contact %}
+        <text:p text:style-name="HEADER_LINE">
+            <text:tab/>
+            {% if loop.first %}
+                <text:span text:style-name="HEADER_NAME">
+                    {{ header.name }}
+                </text:span>
+            {% else %}
+                <text:span text:style-name="GHOST_CHAR">.</text:span>
+            {% endif %}
+            <text:tab/>
+            <text:span text:style-name="HEADER_CONTACT_VENUE">
+                {{ detail.venue | upper }}
+            </text:span>
+            <text:tab/>
+            <text:span text:style-name="HEADER_CONTACT_ADDRESS">
+                {{ detail.address }}
+            </text:span>
+        </text:p>
+    {% endfor %}
+
+    <text:p text:style-name="HEADER_BOTTOM_LINE"></text:p>
+
 </text:section>
+
+{% macro generate_subsection(subsection) %}
+
+    <text:section text:style-name="SUBSECTION" text:name="Subsection">
+
+
+
+    {% if 'skills' in subsection.keys() %}
+        <text:p text:style-name="SKILLS_LINE">
+            <text:span text:style-name="SKILLS_CATEGORY">
+                {{ subsection.name | upper }}
+            </text:span>
+            <text:tab/>
+            <text:span text:style-name="SKILLS_LIST">
+                {{ subsection.skills | join(', ')  }}
+            </text:span>
+        </text:p>
+    {% elif 'name' in subsection.keys() %}
+        <text:p text:style-name="SUBSECTION_HEADER_TOP_MARGIN"/> 
+        {% if 'parent' in subsection.keys() %}
+            <text:p text:style-name="SUBSECTION_HEADER_PARENT">
+                {{ subsection.parent }}
+            </text:p>
+        {% endif %}
+        <text:p text:style-name="SUBSECTION_HEADER_LINE">
+            <text:span text:style-name="SUBSECTION_NAME">
+                {{ subsection.name }}
+            </text:span>
+            <text:tab/>
+            {% if 'alt' in subsection.keys() %}
+                <text:span text:style-name="SUBSECTION_ALT">
+                    {{ subsection.alt }}
+                </text:span>
+            {% endif %}
+            <text:tab/>
+            {% if 'dates' in subsection.keys() %}
+                <text:span text:style-name="SUBSECTION_RT">
+                    {{ subsection.dates }}
+                </text:span>
+            {% endif %}
+        </text:p>
+    {% endif %}
+
+    {% for sssss in subsection.subsections | default([]) %}
+        {{ generate_subsection(sssss) }}
+    {% endfor %}
+
+    {% for bulletpoint in subsection.bulletpoints | default([]) %}
+        <text:p text:style-name="SUBSECTION_BULLETPOINT">
+            •<text:tab/>{{ bulletpoint }}
+        </text:p>
+    {% endfor %}
+
+    </text:section>
+
+{% endmacro %}
+
+
+<text:section text:name="Section Section">
 
 {% for section in sections %}
 
-    <text:p text:style-name="SECTION_NAME">{{ section.name }}</text:p>
+    <text:section text:style-name="SECTION" text:name="{{ section.name }} Section">
 
-    {% for subsection in section.subsections %}
-    
 
-        {% if 'alt' in subsection.keys() %}
-            <text:p text:style-name="SECTION_ITEM_HEADER_3">
-                {{ subsection.name }}<text:tab/>
-                <text:span text:style-name="SECTION_ITEM_ALT">{{ subsection.alt }}</text:span>
-        {% else %}
-            <text:p text:style-name="SECTION_ITEM_HEADER">
-                {{ subsection.name }}
-        {% endif %}
+    {% if section.name | default('') %}
+        <text:p text:style-name="SECTION_NAME">{{ section.name }}</text:p>
+    {% endif %}
 
-        {% if 'dates' in subsection.keys() %}
-            <text:tab/>
-            {{ subsection.dates }}
-        {% endif %}
+    {% for paragraph in section.text | default([]) %}
+        <text:p text:style-name="SECTION_TEXT">
+            {{ paragraph }}
         </text:p>
-
-        {% if 'subsubsections' in subsection.keys() %}
-            {% for sss in subsection.subsubsections %}
-                <text:p text:style-name="SUBSECTION">
-                    <text:tab/>
-                    <text:span text:style-name="SUBSECTION_NAME">{{ sss.name }}</text:span>
-                    <text:tab/>
-                    {{ sss.skills | join(', ')  }}
-                </text:p>
-            {% endfor %}
-        {% endif %}
-
-        {% if 'bulletpoints' in subsection.keys() %}
-            <text:list text:style-name="L2">
-                {% for bulletpoint in subsection.bulletpoints %}
-                    <text:list-item>
-                        <text:p text:style-name="SECTION_ITEM_LIST">{{ bulletpoint }}</text:p>
-                    </text:list-item>
-                {% endfor %}
-            </text:list>
-        {% endif %}
-
     {% endfor %}
 
+    {% for subsection in section.subsections | default([]) %}
+        {{ generate_subsection(subsection)}}
+    {% endfor %}
+
+    </text:section>
+
 {% endfor %}
+
+</text:section>
+
 
 <text:p text:style-name="DEFAULT"/>
 

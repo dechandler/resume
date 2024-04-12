@@ -36,12 +36,19 @@
 >
 
 <office:font-face-decls>
-    <style:font-face style:name="StarSymbol"
-        svg:font-family="StarSymbol"
-        style:font-charset="x-symbol"
-        />
     <style:font-face style:name="Ubuntu"
         svg:font-family="Ubuntu"
+        style:font-family-generic="roman"
+        style:font-pitch="variable"
+        />
+    <style:font-face style:name="Arial"
+        svg:font-family="Arial"
+        style:font-family-generic="roman"
+        style:font-pitch="variable"
+        />
+    <style:font-face style:name="Arial1"
+        svg:font-family="Arial"
+        style:font-family-generic="system"
         style:font-pitch="variable"
         />
 </office:font-face-decls>
@@ -58,106 +65,133 @@
         <style:text-properties
             style:font-name="Ubuntu"
             fo:font-family="Ubuntu"
+            fo:font-size="12pt"
             style:font-pitch="variable"
             />
     </style:style>
 
 
-    <style:style style:name="HEADER_NAME"
-        style:display-name="Header - Name"
+    <style:style style:name="GHOST_CHAR"
+        style:display-name="Ghost character"
+        style:parent-style-name="DEFAULT"
+        style:family="text"
+        >
+        <style:text-properties
+            fo:color="#FFFFFF"
+            />
+    </style:style>
+
+
+    <style:style style:name="HEADER"
+        style:display-name="Resume - Header"
         style:family="paragraph"
         style:parent-style-name="DEFAULT"
         >
         <style:paragraph-properties
             fo:margin-top="0in"
-            fo:margin-bottom="0.2201in"
+            fo:margin-bottom="12pt"
             loext:contextual-spacing="false"
             fo:background-color="transparent"
             style:shadow="none"
             />
+    </style:style>
+
+    <style:style style:name="HEADER_LINE"
+        style:display-name="Resume - Header Line"
+        style:family="paragraph"
+        style:parent-style-name="HEADER"
+        >
+        <style:paragraph-properties
+            fo:margin-bottom="4pt"
+            >
+            <style:tab-stops>
+                <style:tab-stop style:position="0.05in" style:type="left"/>
+                <style:tab-stop style:position="4.5in" style:type="right"/>
+                <style:tab-stop style:position="4.75in" style:type="left"/>
+            </style:tab-stops>
+        </style:paragraph-properties>
+    </style:style>
+
+
+            <!--style:tab-stops>
+                <style:tab-stop style:position="0.05in" style:type="left"/>
+                <style:tab-stop style:position="3.75in" style:type="left"/>
+                <style:tab-stop style:position="7.45in" style:type="right"/>
+            </style:tab-stops-->
+
+    <style:style style:name="HEADER_NAME"
+        style:display-name="Header - Name"
+        style:family="text"
+        style:parent-style-name="HEADER_LINE"
+        >
         <style:text-properties
-            fo:font-size="28pt"
+            fo:font-size="22pt"
             fo:font-weight="bold"
-            />
+        />
     </style:style>
 
-    <style:style style:name="HEADER_TAGLINE"
-        style:display-name="Header - Tagline"
-        style:family="paragraph"
-        style:parent-style-name="DEFAULT"
+    <style:style style:name="HEADER_CONTACT_VENUE"
+        style:display-name="Header - Contact Venue"
+        style:family="text"
+        style:parent-style-name="HEADER_LINE"
         >
-        <loext:graphic-properties
-            draw:fill="none"
-            />
-        <style:paragraph-properties
-            fo:margin-left="1.5in"
-            fo:margin-right="0in"
-            fo:text-align="start"
-            style:justify-single-word="false"
-            fo:text-indent="-1in"
-            style:auto-text-indent="false"
-            fo:background-color="transparent"
-            />
         <style:text-properties
-            fo:font-size="10.5pt"
-            fo:font-style="italic"
-            fo:font-weight="normal"
-            />
-    </style:style>
-
-
-    <style:style style:name="HEADER_CONTACT_TYPE"
-        style:display-name="Header - Contact Type"
-        style:family="paragraph"
-        style:parent-style-name="DEFAULT"
-        >
-        <loext:graphic-properties
-            draw:fill="none"
-            />
-        <style:paragraph-properties
-            fo:margin-right="0in"
-            fo:text-align="end"
-            style:justify-single-word="false"
-            fo:text-indent="0in"
-            style:auto-text-indent="false"
-            fo:background-color="transparent"
-            />
-        <style:text-properties
-            fo:font-size="10.5pt"
-            fo:font-style="normal"
+            fo:font-size="8pt"
             fo:font-weight="bold"
-            />
+        />
     </style:style>
 
-    <style:style style:name="HEADER_CONTACT_VAULE"
-        style:display-name="Header - Contact Value"
+    <style:style style:name="HEADER_CONTACT_ADDRESS"
+        style:display-name="Header - Contact Address"
+        style:family="text"
+        style:parent-style-name="HEADER_LINE"
+        >
+        <style:text-properties
+            fo:font-size="11pt"
+            fo:font-weight="normal"
+        />
+    </style:style>
+
+
+     <style:style style:name="HEADER_BOTTOM_LINE"
+        style:display-name="Header Bottom Line"
+        style:family="paragraph"
+        style:parent-style-name="Horizontal Line"
+        >
+        <style:paragraph-properties 
+            style:border-line-width-bottom="0.0102in 0.0016in 0.0209in"
+            fo:padding-left="0in"
+            fo:padding-right="0in"
+            fo:padding-top="0.05in"
+            fo:padding-bottom="0in"
+            fo:border-left="none"
+            fo:border-right="none"
+            fo:border-top="none"
+            fo:border-bottom="0.4pt double #000000"
+            />
+        <style:text-properties
+            fo:font-size="8pt"
+        />
+    </style:style>
+
+
+
+
+
+    <style:style style:name="SECTION"
+        style:display-name="Section"
         style:family="paragraph"
         style:parent-style-name="DEFAULT"
         >
-        <loext:graphic-properties
-            draw:fill="none"
-            />
-        <style:paragraph-properties
-            fo:text-align="end"
-            style:justify-single-word="false"
-            fo:text-indent="-1in"
-            style:auto-text-indent="false"
-            fo:background-color="transparent"
-            />
-        <style:text-properties
-            fo:font-size="10.5pt"
-            fo:font-style="italic"
-            fo:font-weight="normal"
-            />
     </style:style>
 
     <style:style style:name="SECTION_NAME"
         style:display-name="Section - Name"
         style:family="paragraph"
-        style:parent-style-name="DEFAULT"
+        style:parent-style-name="SECTION"
         >
         <style:paragraph-properties
-            fo:margin-top="0.3in"
+            fo:margin-top="0.25in"
             fo:margin-bottom="0in"
             loext:contextual-spacing="false"
             />
@@ -167,7 +201,72 @@
             />
     </style:style>
 
-    <style:style style:name="SECTION_ITEM_HEADER"
+    <style:style style:name="SECTION_TEXT"
+        style:display-name="Section - Text"
+        style:family="paragraph"
+        style:parent-style-name="DEFAULT"
+        >
+        <style:paragraph-properties
+            fo:margin-left="0.15in"
+            fo:margin-right="0.25in"
+            fo:margin-top="0.05in"
+            fo:margin-bottom="0.1in"
+            loext:contextual-spacing="false"
+            fo:text-align="justify"
+            />
+    </style:style>
+
+
+    <style:style style:name="SUBSECTION"
+        style:display-name="Subsection"
+        style:family="paragraph"
+        style:parent-style-name="DEFAULT"
+        />
+
+    <style:style style:name="SUBSECTION_HEADER"
+        style:family="paragraph"
+        style:parent-style-name="DEFAULT"
+        >
+        <style:text-properties
+            fo:font-size="9pt"
+            fo:font-weight="bold"
+            />
+    </style:style>
+
+
+
+    <style:style style:name="SUBSECTION_HEADER_TOP_MARGIN"
+        style:family="paragraph"
+        style:parent-style-name="DEFAULT"
+        >
+        <style:text-properties
+            fo:font-size="0.01pt"
+            />
+        <style:paragraph-properties
+            fo:margin-top="0.15in"
+            />
+    </style:style>
+
+
+
+    <style:style style:name="SUBSECTION_HEADER_PARENT"
+        style:family="paragraph"
+        style:parent-style-name="DEFAULT"
+        >
+        <style:text-properties
+            fo:font-size="10pt"
+            fo:font-weight="bold"
+        />
+        <style:paragraph-properties
+            fo:margin-left="0.25in"
+            fo:margin-right="0in"
+            fo:margin-top="0.05in"
+        />
+    </style:style>
+
+
+
+    <style:style style:name="SUBSECTION_HEADER_LINE"
         style:display-name="Section - Item Header"
         style:family="paragraph"
         style:parent-style-name="DEFAULT"
@@ -176,9 +275,9 @@
             draw:fill="none"
             />
         <style:paragraph-properties
-            fo:margin-left="0.3752in"
+            fo:margin-left="0.25in"
             fo:margin-right="0in"
-            fo:margin-top="0.1402in"
+            fo:margin-top="0.05in"
             fo:margin-bottom="0.0402in"
             loext:contextual-spacing="false"
             fo:text-indent="0in"
@@ -186,43 +285,67 @@
             fo:background-color="transparent"
             >
             <style:tab-stops>
-                <style:tab-stop style:position="7.1252in" style:type="right"/>
+                <style:tab-stop style:position="5in" style:type="right"/>
+                <style:tab-stop style:position="7.25in" style:type="right"/>
             </style:tab-stops>
         </style:paragraph-properties>
         <style:text-properties
-            fo:font-size="10pt"
-            fo:font-style="normal"
+            fo:font-size="11pt"
             fo:font-weight="bold"
             />
     </style:style>
 
-    <style:style style:name="SECTION_ITEM_HEADER_3"
-        style:display-name="Section - Item Header (Name, Alt, Dates)"
-        style:family="paragraph"
-        style:parent-style-name="SECTION_ITEM_HEADER"
+
+
+
+    <style:style style:name="SUBSECTION_NAME"
+        style:family="text"
+        style:parent-style-name="SUBSECTION_PARENT"
         >
-        <style:paragraph-properties>
+    </style:style>
+
+    <style:style style:name="SUBSECTION_ALT"
+        style:family="text"
+        style:parent-style-name="SUBSECTION_HEADER_LINE"
+        >
+        <style:text-properties
+            fo:font-size="11pt"
+            fo:font-weight="normal"
+            />
+    </style:style>
+
+
+    <style:style style:name="SUBSECTION_RT"
+        style:family="text"
+        style:parent-style-name="SUBSECTION_HEADER_LINE"
+        >
+    </style:style>
+
+
+    <style:style style:name="SUBSECTION_BULLETPOINT"
+        style:family="paragraph"
+        style:parent-style-name="DEFAULT"
+        >
+        <style:paragraph-properties
+            fo:margin-left="0.5in"
+            fo:margin-right="0in"
+            fo:margin-top="0.1in"
+            fo:margin-bottom="0in"
+            loext:contextual-spacing="false"
+            fo:text-indent="-0.15in"
+            style:auto-text-indent="false"
+            fo:background-color="transparent"
+            >
             <style:tab-stops>
-                <style:tab-stop style:position="2in"/>
+                <style:tab-stop style:position="0.2in"/>
                 <style:tab-stop style:position="7.1252in" style:type="right"/>
             </style:tab-stops>
         </style:paragraph-properties>
     </style:style>
 
-    <style:style style:name="SECTION_ITEM_NAME" style:family="text">
-        <style:text-properties fo:font-size="10pt" fo:font-weight="bold"/>
-    </style:style>
-
-    <style:style style:name="SECTION_ITEM_ALT" style:family="text">
-        <style:text-properties fo:font-size="11pt" fo:font-weight="normal"/>
-    </style:style>
-
-    <style:style style:name="SECTION_ITEM_RT" style:family="text">
-        <style:text-properties fo:font-size="10pt" fo:font-weight="bold"/>
-    </style:style>
 
 
-    <style:style style:name="SUBSECTION"
+    <!--style:style style:name="SUBSECTION"
         style:display-name="Subsection"
         style:family="paragraph"
         style:parent-style-name="DEFAULT"
@@ -252,9 +375,54 @@
 
     <style:style style:name="SUBSECTION_NAME" style:family="text">
         <style:text-properties fo:font-size="9pt" fo:font-weight="bold"/>
+    </style:style-->
+
+
+
+
+
+
+    <style:style style:name="SKILLS_LINE"
+        style:family="paragraph"
+        style:parent-style-name="SUBSECTION"
+        >
+        <style:text-properties
+            fo:font-size="10pt"
+            fo:font-weight="normal"
+            />
+        <style:paragraph-properties
+            fo:margin-left="1.5in"
+            fo:margin-right="0in"
+            fo:margin-top="0.09in"
+            fo:text-indent="-1.1in"
+            >
+            <style:tab-stops>
+                <style:tab-stop style:position="5in"/>
+            </style:tab-stops>
+        </style:paragraph-properties>
     </style:style>
 
-    <style:style style:name="SECTION_ITEM_LIST"
+    <style:style style:name="SKILLS_CATEGORY"
+        style:family="text"
+        style:parent-style-name="SKILLS_LINE"
+        >
+        <style:text-properties
+            fo:font-size="8pt"
+            fo:font-weight="bold"
+            />
+    </style:style>
+
+    <style:style style:name="SKILLS_LIST"
+        style:family="text"
+        style:parent-style-name="SKILLS_LINE"
+        >
+        <style:text-properties
+            fo:font-size="12pt"
+            fo:font-weight="normal"
+            />
+    </style:style>
+
+    <!--style:style style:name="SECTION_ITEM_LIST"
         style:display-name="Section - Item List"
         style:family="paragraph"
         style:parent-style-name="DEFAULT"
@@ -263,8 +431,8 @@
             draw:fill="none"
             />
         <style:paragraph-properties
-            fo:margin-left="0.6252in"
-            fo:margin-right="0in"
+            fo:margin-left="0.6in"
+            fo:margin-right="0.25in"
             fo:margin-top="0.0598in"
             fo:margin-bottom="0.0402in"
             loext:contextual-spacing="false"
@@ -293,7 +461,7 @@
             fo:hyphenation-remain-char-count="2"
             fo:hyphenation-push-char-count="2"
             />
-    </style:style>
+    </style:style-->
 
     <style:style style:name="LIST_SYMBOLS"
         style:display-name="Bullet Symbols"
@@ -316,7 +484,7 @@
             style:num-format="1"
             style:print-orientation="portrait"
             fo:margin="0"
-            fo:margin-top="0.5in"
+            fo:margin-top="0.4in"
             fo:margin-bottom="0.5in"
             fo:margin-left="0.5in"
             fo:margin-right="0.5in"

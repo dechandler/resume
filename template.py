@@ -12,7 +12,7 @@ template_file = os.path.join(pwd, "content.xml.j2")
 content_file = os.path.join(pwd, "content.xml")
 
 with open(data_file) as fh:
-    resume_data = yaml.load(fh)
+    resume_data = yaml.safe_load(fh)
 
 with open(template_file) as fh:
     template = Template(fh.read())
