@@ -1,0 +1,182 @@
+# header
+
+## name
+David Chandler
+
+## contact
+
+###### email
+contact@dechandler.io
+###### linkedin
+linkedin.com/in/dechandler10
+###### github
+github.com/dechandler
+
+## location
+Tacoma, WA
+
+## tagline
+Automation Engineer specializing in infrastructure deployment and Linux servers, with proven expertise in Ansible, Python, and Terraform.
+
+# body
+
+## Technical Skills
+
+###### Infrastructure as Code
+- Ansible
+- Terraform
+- AWS CloudFormation
+
+###### Programming & Scripting
+- Python
+- Bash
+- SQL
+
+###### AWS Services
+- VPC
+- EC2
+- ELB
+- Elastic Kubernetes Service (EKS)
+- Amazon RDS
+- MSK (Apache Kafka)
+
+###### Linux Systems
+- Red Hat Enterprise Linux (RHEL)
+- Ubuntu Linux
+
+###### Containerization
+- Docker
+- Kubernetes
+- Podman
+- Rootless Containers
+
+###### Network & Protocols
+- TCP/IP
+- SSH
+- DNS
+- HTTP
+
+###### Databases
+- Redis
+- ElasticSearch
+- RabbitMQ
+- MySQL
+- PostgreSQL
+
+###### Monitoring
+- Prometheus
+- Grafana
+- Logstash/ELK Stack
+
+###### Services
+- Apache
+- Nginx
+- HAProxy
+
+## - Core Competencies
+
+### Automation
+- Infrastructure as Code (IaC)
+- Configuration Management
+- Rapidly Repeatable Deployments
+
+### Systems
+- Linux systems engineering
+- Resource Documentation
+- Technical Debt
+
+### Contexts
+- Cloud
+- Hybrid Cloud
+- Hosted
+- On-Premises
+
+## - Professional Experience
+
+### Commscope
+
+employer: Commscope
+location: Remote / Austin, TX
+tenure:
+    start: April 2019
+    end: February 2024
+title: Staff QA Engineer (for Automation)
+
+#### short description
+
+Automated the deployment of highly variable load test environments with consistently evolving requirements and backend technologies
+
+#### main points
+
+- Wrote automation to build, manage, and tear down ephemeral test environments in a Linux server lab, then migrated to building private AWS VPC networks with EC2 instances and other AWS hosted services. This reduced test deployment from two weeks to a matter of hours. This was accomplished primarily utilizing Ansible, Terraform, Python and Bash
+
+- Took ownership of server lab maintenance, including documentation of resources, repairing deployment functionality, and working with IT to clean up a compromise, earning both recognition and a bonus
+
+- Improved observability of software and backend systems by dynamically provisioning federated Prometheus instances and developing the corresponding Grafana dashboards and Logstash pipelines
+
+- Adapted other teams’ automation to fit the specific needs of Performance QA, which enabled testing in an environment more closely mirroring production and its development
+
+- Collaborated with developers to optimize environment parameters and supporting service configurations to accommodate various deployments of software products
+
+- Load tested software products using a variety of client simulators and data generators to test for performance regressions, create performance reports, and calculate AWS cost summaries. These helped customers and internal teams right-size environments and understand the software’s total cost of ownership
+
+### Rackspace
+
+employer: Rackspace
+location: Austin, TX / San Antonio, TX
+tenure:
+    start: November 2012
+    end: June 2018
+title: Linux Administrator II
+
+#### short description
+
+Supported Linux servers and cloud deployments for Enterprise customers, additionally developing tools and automation used extensively by peers
+
+#### main points
+
+- Deployed, configured, and maintained RHEL and Ubuntu servers, along with common services (e.g., Apache, MySQL, NFS, Vsftpd, and PHP-FPM)
+
+- Implemented secure and sustainable solutions in response to customer requests, often overcoming language and cultural barriers and following up on incomplete information
+
+- Led a development task force, addressing technical debt in tools used by front-line support staff and authoring new tools that were severely needed
+
+- Authored, improved, and maintained tools and automation used by support staff. This includes applications and scripts which interact with internal APIs, log into and perform work on customer servers, query and manipulate databases, web scrape, and parse server logs, command output, and network appliance configurations
+
+- Screened and interviewed candidates applying for positions on my team and contributed to the training of new hires
+
+### TAMU-CIS
+
+employer: Texas A&M Computing & Information Services
+location: College Station, TX
+tenure:
+    start: July 2008
+    end: May 2012
+title: Student Technician – Help Desk & Student Computing Center
+
+#### main points
+- Assisted students and faculty with personal machines by cleaning malware infections, assessing and fixing boot problems, recovering data, swapping hardware, OS reinstalls, as well as account management for the campus LDAP
+
+- Authored and updated documentation on lab systems and processes
+
+- Managed campus computer lab operations, desktop PCs, and large network printers
+
+## - Education
+
+#### TAMU
+
+institution: "Texas A&M University"
+degree: Bachelor of Science (BS) in Psychology
+date: May 2012
+
+## - Certifications
+
+#### RHCE
+certification: RHCE (Red Hat Certified Engineer)
+id: 130-024-615
+date: May 2024
+
+#### Security+
+certification: CompTIA Security+
+id: B7P6PL0Y7FV4SFBJ
+date: September 2025
