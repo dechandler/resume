@@ -1,0 +1,9 @@
+---            
+# log_path: ~/.config/resume-render/log/resume-render.log
+# log_level: INFO
+# stderr_log_level: WARNING
+
+# tmpl_dir: ~/.config/resume-render/templates
+# data_dir: ~/.config/resume-render/resume-data
+# docx_out_dir: ~/.config/resume-render/docx-out
+# pdf_out_dir: ~/.config/resume-render/pdf-out
