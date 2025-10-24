@@ -1,12 +1,13 @@
 # David Chandler
 
-Email: contact@dechandler.io
-LinkedIn: linkedin.com/in/dechandler10
-Github: github.com/dechandler
+Email: contact@dechandler.io  
+LinkedIn: linkedin.com/in/dechandler10  
+Github: github.com/dechandler  
 
 Tacoma, WA
 
 Automation Engineer specializing in infrastructure deployment and Linux servers, with proven expertise in Ansible, Python, and Terraform.
+
 
 ## Technical Skills
 
@@ -51,9 +52,9 @@ Cloud, Hybrid Cloud, Hosted, On-Premises
 
 #### Commscope
 
-Title: Staff QA Engineer (for Automation)
-Tenure: April 2019 – February 2024
-Location: Remote / Austin, TX
+Title: Staff QA Engineer (for Automation)  
+Tenure: April 2019 – February 2024  
+Location: Remote / Austin, TX  
 
 Designed, automated, and deployed highly variable load test environments with consistently evolving requirements and backend technologies
 
@@ -74,9 +75,9 @@ Designed, automated, and deployed highly variable load test environments with co
 
 #### Rackspace
 
-Title: Linux Administrator II
-Tenure: November 2012 – June 2018
-Location: Austin, TX / San Antonio, TX
+Title: Linux Administrator II  
+Tenure: November 2012 – June 2018  
+Location: Austin, TX / San Antonio, TX  
 
 Supported Linux servers and cloud deployments for Enterprise customers, additionally developing tools and automation used extensively by peers
 
@@ -97,9 +98,9 @@ Supported Linux servers and cloud deployments for Enterprise customers, addition
 
 #### Texas A&M Computing & Information Services
 
-Title: Student Technician – Help Desk & Student Computing Center
-Tenure: July 2008 – May 2012
-Location: College Station, TX
+Title: Student Technician – Help Desk & Student Computing Center  
+Tenure: July 2008 – May 2012  
+Location: College Station, TX  
 
 - Managed campus computer lab operations (desktop PCs and large network printers) and authored and updated documentation on lab systems and processes
 

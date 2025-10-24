@@ -1,7 +1,7 @@
 # {{ header.name }}
 
 {% for name, contact_info in header.contact.items() %}
-{{- name }}: {{ contact_info }}
+{{- name }}: {{ contact_info }}  
 {% endfor %}
 {{ header.location }}
 
@@ -23,9 +23,9 @@
 {% for job in body['Professional Experience'] %}
 #### {{ job.employer }}
 
-Title: {{ job.title }}
-Tenure: {{ job.tenure.start }} – {{ job.tenure.end }}
-Location: {{ job.location }}{%
+Title: {{ job.title }}  
+Tenure: {{ job.tenure.start }} – {{ job.tenure.end }}  
+Location: {{ job.location }}  {%
   if 'short description' in job %}
 
 {{ job['short description'] }}
