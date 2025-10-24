@@ -17,9 +17,8 @@ class RenderConfig(DeclibConfig):
         extra_defaults = {
             'tmpl_dir': "~/.config/resume-render/templates",
             'data_dir': "~/.config/resume-render/resume-data",
-            'docx_out_dir': "~/.config/resume-render/docx-out",
-            'pdf_out_dir': "~/.config/resume-render/pdf-out"
+            'out_dir': "~/.config/resume-render/out"
         }
-        path_opts = ['tmpl_dir', 'data_dir', 'docx_out_dir', 'pdf_out_dir']
+        path_opts = ['tmpl_dir', 'data_dir', 'out_dir']
 
         super().__init__("resume-render", extra_defaults, path_opts)

@@ -5,5 +5,4 @@
 
 # tmpl_dir: ~/.config/resume-render/templates
 # data_dir: ~/.config/resume-render/resume-data
-# docx_out_dir: ~/.config/resume-render/docx-out
-# pdf_out_dir: ~/.config/resume-render/pdf-out
+# out_dir: ~/.config/resume-render/out
