@@ -110,16 +110,16 @@ Location: College Station, TX
 ## Education
 
 #### Bachelor of Science (BS) in Psychology
-Institution: Texas A&M University
+Institution: Texas A&M University  
 Date: May 2012
 
 
 ## Certifications 
 
 #### RHCE (Red Hat Certified Engineer)
-ID: 130-024-615
+ID: 130-024-615  
 Date: May 2024
 
 #### CompTIA Security+
-ID: B7P6PL0Y7FV4SFBJ
+ID: B7P6PL0Y7FV4SFBJ  
 Date: September 2025

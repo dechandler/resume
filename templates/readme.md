@@ -38,7 +38,7 @@ Location: {{ job.location }}  {%
 ## Education
 {% for degree in body['Education'] %}
 #### {{ degree.degree }}
-Institution: {{ degree.institution }}{%
+Institution: {{ degree.institution }}  {%
   if 'date' in degree %}
 Date: {{ degree.date }}{% endif %}
 {% endfor %}
@@ -46,6 +46,6 @@ Date: {{ degree.date }}{% endif %}
 ## Certifications 
 {% for cert in body['Certifications'] %}
 #### {{ cert.certification }}
-ID: {{ cert.id }}
+ID: {{ cert.id }}  
 Date: {{ cert.date }}
 {% endfor %}
