@@ -5,11 +5,11 @@ David Chandler
 
 ## contact
 
-###### email
+###### Email
 contact@dechandler.io
-###### linkedin
+###### LinkedIn
 linkedin.com/in/dechandler10
-###### github
+###### Github
 github.com/dechandler
 
 ## location
@@ -104,21 +104,24 @@ title: Staff QA Engineer (for Automation)
 
 #### short description
 
-Automated the deployment of highly variable load test environments with consistently evolving requirements and backend technologies
+Designed, automated, and deployed highly variable load test environments with consistently evolving requirements and backend technologies
 
 #### main points
 
-- Wrote automation to build, manage, and tear down ephemeral test environments in a Linux server lab, then migrated to building private AWS VPC networks with EC2 instances and other AWS hosted services. This reduced test deployment from two weeks to a matter of hours. This was accomplished primarily utilizing Ansible, Terraform, Python and Bash
+- Automated deployment of ephemeral test environments in a server lab, before migrating to private AWS VPC networks with EC2 instances and other AWS hosted services. This reduced test deployment from two weeks to a matter of hours. This was accomplished primarily utilizing Ansible, Terraform, Python, and Bash, with some services deployed to a Kubernetes cluster
 
-- Took ownership of server lab maintenance, including documentation of resources, repairing deployment functionality, and working with IT to clean up a compromise, earning both recognition and a bonus
+- Authored technical documentation for automation tooling, so it could be used by other teams and integrated into larger runbooks
 
-- Improved observability of software and backend systems by dynamically provisioning federated Prometheus instances and developing the corresponding Grafana dashboards and Logstash pipelines
+- "Took ownership of server lab maintenance: documented resources, restored deployment functionality, and partnered with IT to remediate a security incident."
 
-- Adapted other teams’ automation to fit the specific needs of Performance QA, which enabled testing in an environment more closely mirroring production and its development
+- Improved observability of software and backend systems by dynamically provisioning federated Prometheus instances and developing corresponding Grafana dashboards and Logstash pipelines
 
-- Collaborated with developers to optimize environment parameters and supporting service configurations to accommodate various deployments of software products
+- Adapted another team's Terraform automation for Kubernetes (AWS EKS) to fit the specific needs of Performance QA, which enabled testing in an environment more closely mirroring production and its development
 
-- Load tested software products using a variety of client simulators and data generators to test for performance regressions, create performance reports, and calculate AWS cost summaries. These helped customers and internal teams right-size environments and understand the software’s total cost of ownership
+- Collaborated with developers to optimize environment parameters and supporting service configurations to accommodate various deployments of Java software products
+
+- Conducted product load testing to identify regressions and generate reports on performance and AWS costs. These informed scaling and total-cost-of-ownership calculations for both customers and internal teams
+
 
 ### Rackspace
 
@@ -135,15 +138,19 @@ Supported Linux servers and cloud deployments for Enterprise customers, addition
 
 #### main points
 
-- Deployed, configured, and maintained RHEL and Ubuntu servers, along with common services (e.g., Apache, MySQL, NFS, Vsftpd, and PHP-FPM)
+- Deployed, configured, maintained, and hardened Linux servers (RHEL and Ubuntu), along with common services (e.g., SSHD, Apache, MySQL, NFS, Vsftpd, and PHP-FPM)
 
-- Implemented secure and sustainable solutions in response to customer requests, often overcoming language and cultural barriers and following up on incomplete information
+- Performed triage, troubleshooting, and root cause analysis in response to major and minor incidents
+
+- Implemented security best practices and sustainable solutions in response to customer requests, often overcoming language and cultural barriers and following up on incomplete information
 
 - Led a development task force, addressing technical debt in tools used by front-line support staff and authoring new tools that were severely needed
 
-- Authored, improved, and maintained tools and automation used by support staff. This includes applications and scripts which interact with internal APIs, log into and perform work on customer servers, query and manipulate databases, web scrape, and parse server logs, command output, and network appliance configurations
+- Developed security processes for Wordpress filesystem permissions and spearheaded their proliferation. Besides improving our customers' security posture, this addressed a major support issue where incremental permission changes were causing fragility and runaway complexity in customer environments
 
-- Screened and interviewed candidates applying for positions on my team and contributed to the training of new hires
+- Authored, improved, and maintained tools and automation used by support staff. This includes applications and scripts in Python and Javascript which interact with internal APIs, log into and perform work on customer servers, query and manipulate databases (SQL and NoSQL), web scrape, and parse server logs, command output, and network appliance configurations
+
+- Screened and interviewed candidates applying for positions on my team and assisted in training new hires
 
 ### TAMU-CIS
 
@@ -155,11 +162,9 @@ tenure:
 title: Student Technician – Help Desk & Student Computing Center
 
 #### main points
-- Assisted students and faculty with personal machines by cleaning malware infections, assessing and fixing boot problems, recovering data, swapping hardware, OS reinstalls, as well as account management for the campus LDAP
+- Managed campus computer lab operations (desktop PCs and large network printers) and authored and updated documentation on lab systems and processes
 
-- Authored and updated documentation on lab systems and processes
-
-- Managed campus computer lab operations, desktop PCs, and large network printers
+- Assisted students and faculty with personal machines by cleaning malware infections, assessing and fixing boot problems, recovering data, swapping hardware, OS reinstalls, as well as student account management
 
 ## - Education
 
